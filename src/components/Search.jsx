@@ -21,10 +21,7 @@ const Search = () => {
   const { currentUser } = useContext(AuthContext);
 
   const handleSearch = async () => {
-    const q = query(
-      collection(db, "users"),
-      where("displayName", "==", username)
-    );
+
 
     try {
       const querySnapshot = await getDocs(q);
