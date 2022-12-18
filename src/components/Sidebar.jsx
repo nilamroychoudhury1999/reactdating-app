@@ -5,7 +5,6 @@ import Chats from "./Chats"
 
 
 const Sidebar = () => {
-  const  [value,setValue]=useState()
   return (
     <div className="sidebar">
     <>  <Navbar />
