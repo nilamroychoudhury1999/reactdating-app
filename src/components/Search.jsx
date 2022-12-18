@@ -17,7 +17,7 @@ const Search = () => {
 
 
   useEffect(() => {
-    {
+    
        const unsub = onSnapshot(
            query(
                collection(
@@ -35,7 +35,6 @@ const Search = () => {
        );
        console.log(unsub)
       
-   }
    
 }, []);
 
