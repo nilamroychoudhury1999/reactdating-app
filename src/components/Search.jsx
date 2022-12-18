@@ -20,18 +20,7 @@ const Search = () => {
 
   const { currentUser } = useContext(AuthContext);
 
-  const handleSearch = async () => {
 
-
-    try {
-      const querySnapshot = await getDocs(q);
-      querySnapshot.forEach((doc) => {
-        setUser(doc.data());
-      });
-    } catch (err) {
-      setErr(true);
-    }
-  };
   useEffect(() => {
     {
        const unsub = onSnapshot(
